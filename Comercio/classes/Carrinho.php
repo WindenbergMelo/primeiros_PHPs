@@ -27,7 +27,7 @@ class Carrinho {
                 //Nesse if vai verificar a quantidade do produto no estoque
                 if($argumentos[$q]<=$argumentos[$p]->getQtdEstoque()){
                     echo "O produto ".$argumentos[$p]->getNome()." foi adicionado ao carrinho.</br>";
-                    //função para dminuir a quantidade de produtos no estoque já que foi comprado
+                    //função para diminuir a quantidade de produtos no estoque já que foi comprado
                     $argumentos[$p]->prodComprado($argumentos[$q]);
                     /*Nessa parte vai ser feito a multiplicação da quantidade dos produtos
                     pedidos pelo cliente e o valor dele, depois armazenado no valor total*/
